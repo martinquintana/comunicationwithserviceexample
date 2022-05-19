@@ -1,0 +1,17 @@
+<p>nieto-b works!</p>
+<h4>componente nieto b</h4>
+
+escribe aca: <br>
+
+<!-- <textarea (input)="cambioTexto($event.target.value)" 
+[(ngModel)]="mensaje" id="" cols="30" rows="10"></textarea> -->
+
+<form [formGroup]="form" (ngSubmit)="cambioTexto()">
+  <input placeholder="texto" formControlName="texto">
+  <br>
+  <button [disabled]="form.invalid" type="submit">Enviar Mensaje</button>
+
+</form>
+
+<br>
+<b>mensaje: {{ mensaje }} </b>

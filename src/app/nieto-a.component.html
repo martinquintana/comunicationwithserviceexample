@@ -1,0 +1,14 @@
+<p>nieto-a works!</p>
+<h4>componente nieto a</h4>
+
+escribe aca: <br>
+
+<form [formGroup]="form" (ngSubmit)="cambioTexto()">
+    <input placeholder="texto" formControlName="texto">
+    <br>
+    <button [disabled]="form.invalid" type="submit">Enviar Mensaje</button>
+
+</form>
+
+<br>
+<b>mensaje: {{ mensaje }} </b>
