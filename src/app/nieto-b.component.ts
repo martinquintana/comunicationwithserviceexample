@@ -17,6 +17,7 @@ export class NietoBComponent implements OnInit {
     private fb: FormBuilder,
     private comunicationService: ComunicationService)
      { 
+      //formulario del textbox
       this.form = this.fb.group({
         texto: ['', Validators.required]
       });
